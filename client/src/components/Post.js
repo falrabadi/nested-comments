@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { usePost } from "../contexts/PostContext"
 import { useAsyncFn } from "../hooks/useAsync"
 import { createComment } from "../services/comments"
@@ -16,6 +17,7 @@ export function Post() {
 
     return (
         <>
+            <Link to="/"><button> &lt; Return Home </button></Link>
             <h1>{post.title}</h1>
             <article>{post.body}</article>
             <h3 className="comments-title">Comments</h3>

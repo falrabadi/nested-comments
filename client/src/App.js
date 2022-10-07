@@ -7,9 +7,9 @@ import { PostProvider } from "./contexts/PostContext"
 function App() {
     return (
         <div className="container">
-            <Navbar />
+
             <Routes>
-                <Route path="/" element={<PostList />} />
+                <Route path="/" element={<><Navbar /> <PostList /></>} />
                 <Route
                     path="/posts/:id"
                     element={
