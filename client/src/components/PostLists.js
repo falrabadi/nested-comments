@@ -10,9 +10,12 @@ export function PostList() {
 
     return posts.map(post => {
         return (
-            <h1 key={post.id}>
-                <Link to={`/posts/${post.id}`}>{post.title}</Link>
-            </h1>
+            <div>
+                <h1 key={post.id}>
+                    <Link to={`/posts/${post.id}`}>{post.title}</Link>
+                </h1>
+            </div>
+
         )
     })
 }

@@ -199,3 +199,12 @@
   .btn[disabled] {
     --color: hsl(var(--hue), 20%, 74%);
   }
+
+  .navbar{
+    position: relative !important;
+    font-size: 1.2rem !important;
+    display:flex;
+    align-items:center;
+    justify-content : space-between;
+
+  }

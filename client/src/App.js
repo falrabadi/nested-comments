@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom"
+import { Navbar } from "./components/NavBar"
 import { Post } from "./components/Post"
 import { PostList } from "./components/PostLists"
 import { PostProvider } from "./contexts/PostContext"
@@ -6,6 +7,7 @@ import { PostProvider } from "./contexts/PostContext"
 function App() {
     return (
         <div className="container">
+            <Navbar />
             <Routes>
                 <Route path="/" element={<PostList />} />
                 <Route
