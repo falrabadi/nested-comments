@@ -6,17 +6,17 @@ This project is trying to recreate a nested comment section, similar to Reddit.
 Connect to psql
 
 ```bash
-    sudo -u postgres psql
+sudo -u postgres psql
 ```
 
 Connect to the database
 
 ```bash
-    \c comments
+\c comments
 ```
 
 Use queries to check data in database
 
 ```bash
-    SELECT * FROM "Post";
+SELECT * FROM "Post";
 ```

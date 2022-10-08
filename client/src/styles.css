@@ -31,6 +31,10 @@
     display: flex;
     gap: .5rem;
   }
+
+  .new-post-form-row{
+    display: block;
+  }
   
   .message-input {
     flex-grow: 1;
@@ -38,17 +42,86 @@
     height: 70px;
     border-radius: .5em;
     padding: .5em;
+    border: 2px solid hsl(235, 50%, 74%);
+    padding: 8px;
+    margin: 12px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .message-input:focus {
+    border-color: hsl(235, 100%, 67%);
+    outline: none;
+  }
+
+  .title-cont{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .title-label{
+    font-size: 2rem;
+  }
+
+  .title-input{
+    width: 100%;
+    flex-grow: 1;
+    resize: none;
+    height: 50px;
+    border-radius: .5em;
+    padding: .5em;
     font-size: inherit;
     font-family: inherit;
     border: 2px solid hsl(235, 50%, 74%);
     line-height: 1.4;
   }
-  
-  .message-input:focus {
+
+  .title-input:focus{
     border-color: hsl(235, 100%, 67%);
     outline: none;
   }
-  
+
+  .subject-cont{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .subject-label{
+    display: block;
+    font-size: 2rem;
+  }
+
+  .subject-input {
+    width: 100%;
+    flex-grow: 1;
+    resize: none;
+    height: 150px;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: inherit;
+    font-family: inherit;
+    border: 2px solid hsl(235, 50%, 74%);
+    line-height: 1.4;
+  }
+
+  .subject-input:focus {
+    border-color: hsl(235, 100%, 67%);
+    outline: none;
+  }
+
+  .newpost-btn{
+    --hue: 235;
+    --color: hsl(var(--hue), 100%, 67%);
+    padding: 1em 4em;
+    background: var(--color);
+    border: none;
+    color: white;
+    border-radius: .5em;
+    font-size: 1em;
+    cursor: pointer;
+    float: right;
+  }
+
   .mt-4 {
     margin-top: 1rem;
   }
