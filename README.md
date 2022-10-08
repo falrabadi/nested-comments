@@ -3,7 +3,13 @@ This project is trying to recreate a nested comment section, similar to Reddit.
 
 ### Check Database
 
-Connect to psql
+Start the postgresql database server
+
+```bash
+sudo service postgresql start
+```
+
+Connect to psql database
 
 ```bash
 sudo -u postgres psql
