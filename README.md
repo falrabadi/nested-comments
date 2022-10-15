@@ -26,3 +26,31 @@ Use queries to check data in database
 ```bash
 SELECT * FROM "Post";
 ```
+
+
+## To start the project:
+
+Open new terminal and cd into server folder
+
+```bash
+cd server
+```
+
+Run the command to connect server to front-end
+
+```bash
+npm run devStart
+```
+
+Open another terminal and cd into client side folder
+
+```bash
+cd client
+```
+
+Run client side
+
+```bash
+npm start
+```
+
